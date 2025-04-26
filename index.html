@@ -4,18 +4,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Landing Page</title>
+    <title>Marvel Universe | Official Fan Page</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">Your Brand</a>
+        <a class="navbar-brand" href="#">
+          <span class="marvel-text">MARVEL</span>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,13 +30,16 @@
               <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Characters</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">Comics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
             </li>
           </ul>
         </div>
@@ -40,59 +47,58 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero bg-primary text-white text-center py-5">
+    <header class="hero text-white text-center">
       <div class="container">
-        <h1 class="display-3">Welcome to Our Website</h1>
-        <p class="lead">A Bootstrap landing page template for your next project</p>
-        <a href="#" class="btn btn-light btn-lg px-4 mt-3">Learn More</a>
+        <h1 class="display-2">WELCOME TO THE MARVEL UNIVERSE</h1>
+        <p class="lead">Discover the heroes, villains, and stories that have captivated fans for generations</p>
+        <div class="mt-4">
+          <a href="#" class="btn btn-danger btn-lg me-2">EXPLORE HEROES</a>
+          <a href="#" class="btn btn-outline-light btn-lg">WATCH TRAILERS</a>
+        </div>
       </div>
     </header>
 
-    <!-- Features Section -->
+    <!-- Featured Heroes Section -->
     <section class="py-5">
       <div class="container">
         <div class="text-center mb-5">
-          <h2>Features</h2>
-          <p class="lead">Why choose our product</p>
+          <h2 class="section-title">FEATURED HEROES</h2>
+          <p class="lead">Earth's mightiest heroes ready to save the day</p>
         </div>
         <div class="row">
           <div class="col-lg-4 mb-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card hero-card iron-man">
               <div class="card-body text-center">
-                <svg class="bi bi-gear mb-3" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
-                  <path
-                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
-                </svg>
-                <h4>Customizable</h4>
-                <p>Easily customize our product to meet your needs.</p>
+                <div class="hero-icon">
+                  <i class="fa-solid fa-helmet-safety"></i>
+                </div>
+                <h4>IRON MAN</h4>
+                <p>Genius. Billionaire. Philanthropist. The armored Avenger.</p>
+                <a href="#" class="btn btn-outline-danger">Learn More</a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card hero-card captain-america">
               <div class="card-body text-center">
-                <svg class="bi bi-lightning mb-3" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .424.765L8.438 6h3.063a.5.5 0 0 1 .395.807L4.896 13.851a.5.5 0 0 1-.87-.433L5.087 8H2.525a.5.5 0 0 1-.424-.765L4.086 1.235A.5.5 0 0 1 4.5 1h6.001a.5.5 0 0 1 .424.765L9.638 6h4.087a.5.5 0 0 1 .395.807L6.12 13.851a.5.5 0 0 1-.87-.433L6.887 8H1.525a.5.5 0 0 1-.424-.765L3.086 1.235A.5.5 0 0 1 3.5 1h2.001z" />
-                </svg>
-                <h4>Fast Performance</h4>
-                <p>Our product is optimized for maximum speed.</p>
+                <div class="hero-icon">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h4>CAPTAIN AMERICA</h4>
+                <p>Super-Soldier. Leader. The First Avenger and beacon of hope.</p>
+                <a href="#" class="btn btn-outline-danger">Learn More</a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card hero-card thor">
               <div class="card-body text-center">
-                <svg class="bi bi-shield-check mb-3" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
-                  <path
-                    d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
-                </svg>
-                <h4>Secure</h4>
-                <p>Built with security in mind to protect your data.</p>
+                <div class="hero-icon">
+                  <i class="fa-solid fa-hammer"></i>
+                </div>
+                <h4>THOR</h4>
+                <p>God of Thunder. Asgardian. Wielder of the mighty Mjolnir.</p>
+                <a href="#" class="btn btn-outline-danger">Learn More</a>
               </div>
             </div>
           </div>
@@ -100,61 +106,91 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Latest Movies Section -->
     <section class="py-5 bg-light">
       <div class="container">
         <div class="text-center mb-5">
-          <h2>Testimonials</h2>
-          <p class="lead">What our customers are saying</p>
+          <h2 class="section-title">LATEST RELEASES</h2>
+          <p class="lead">The newest additions to the Marvel Cinematic Universe</p>
         </div>
         <div class="row">
           <div class="col-lg-4 mb-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card movie-card">
+              <div class="movie-poster movie-1"></div>
               <div class="card-body">
-                <p class="mb-3">"This product has completely transformed how we work. Highly recommended!"</p>
-                <div class="d-flex align-items-center">
-                  <div class="bg-primary rounded-circle d-flex justify-content-center align-items-center"
-                    style="width: 50px; height: 50px;">
-                    <span class="text-white fw-bold">JD</span>
-                  </div>
-                  <div class="ms-3">
-                    <h5 class="mb-0">John Doe</h5>
-                    <small class="text-muted">CEO, Example Inc.</small>
-                  </div>
+                <h5>THE MARVELS</h5>
+                <p class="mb-3">Captain Marvel joins forces with Ms. Marvel and Monica Rambeau in this cosmic adventure.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="badge bg-danger">NEW</span>
+                  <a href="#" class="btn btn-sm btn-outline-danger">Watch Trailer</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card movie-card">
+              <div class="movie-poster movie-2"></div>
               <div class="card-body">
-                <p class="mb-3">"The best solution I've found after years of searching. The customer support is
-                  excellent."</p>
-                <div class="d-flex align-items-center">
-                  <div class="bg-primary rounded-circle d-flex justify-content-center align-items-center"
-                    style="width: 50px; height: 50px;">
-                    <span class="text-white fw-bold">JS</span>
-                  </div>
-                  <div class="ms-3">
-                    <h5 class="mb-0">Jane Smith</h5>
-                    <small class="text-muted">CTO, Tech Co.</small>
-                  </div>
+                <h5>GUARDIANS OF THE GALAXY VOL. 3</h5>
+                <p class="mb-3">The Guardians embark on one final mission to protect the universe.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="badge bg-secondary">2023</span>
+                  <a href="#" class="btn btn-sm btn-outline-danger">Watch Trailer</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card h-100 shadow-sm">
+            <div class="card movie-card">
+              <div class="movie-poster movie-3"></div>
               <div class="card-body">
-                <p class="mb-3">"We've seen a 40% increase in productivity since implementing this solution."</p>
-                <div class="d-flex align-items-center">
-                  <div class="bg-primary rounded-circle d-flex justify-content-center align-items-center"
-                    style="width: 50px; height: 50px;">
-                    <span class="text-white fw-bold">RJ</span>
+                <h5>ANT-MAN AND THE WASP: QUANTUMANIA</h5>
+                <p class="mb-3">Scott Lang and Hope Van Dyne face their greatest challenge in the Quantum Realm.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="badge bg-secondary">2023</span>
+                  <a href="#" class="btn btn-sm btn-outline-danger">Watch Trailer</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comic Collection -->
+    <section class="py-5 comic-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title text-white">LEGENDARY COMICS</h2>
+          <p class="lead text-white">Explore the stories that started it all</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card comic-card h-100">
+              <div class="row g-0">
+                <div class="col-md-4 comic-cover comic-1"></div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">AVENGERS</h5>
+                    <p class="card-text">Earth's Mightiest Heroes joined forces to take on threats no single hero could
+                      face.</p>
+                    <a href="#" class="btn btn-sm btn-danger">Read Now</a>
                   </div>
-                  <div class="ms-3">
-                    <h5 class="mb-0">Robert Johnson</h5>
-                    <small class="text-muted">Founder, Startup Ltd.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card comic-card h-100">
+              <div class="row g-0">
+                <div class="col-md-4 comic-cover comic-2"></div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">X-MEN</h5>
+                    <p class="card-text">Mutants with extraordinary abilities fight for peace in a world that fears
+                      them.</p>
+                    <a href="#" class="btn btn-sm btn-danger">Read Now</a>
                   </div>
                 </div>
               </div>
@@ -164,59 +200,71 @@
       </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="py-5 bg-primary text-white">
+    <!-- Join the Universe Call to Action -->
+    <section class="py-5 cta-section text-white">
       <div class="container text-center">
-        <h2>Ready to get started?</h2>
-        <p class="lead mb-4">Join thousands of satisfied customers today.</p>
-        <button class="btn btn-light btn-lg px-4 me-md-2">Sign Up Now</button>
-        <button class="btn btn-outline-light btn-lg px-4">Learn More</button>
+        <h2>JOIN THE MARVEL UNIVERSE</h2>
+        <p class="lead mb-4">Get exclusive content, early access to tickets, and special offers</p>
+        <button class="btn btn-danger btn-lg px-4 me-md-2">BECOME AN INSIDER</button>
+        <button class="btn btn-outline-light btn-lg px-4">LEARN MORE</button>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark text-white">
+    <footer class="py-5 text-white">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <h5>About Us</h5>
-            <p>We are a company focused on creating the best products for our customers.</p>
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <h5>ABOUT MARVEL</h5>
+            <p>Marvel Entertainment, LLC, a wholly-owned subsidiary of The Walt Disney Company, is one of the world's
+              most prominent character-based entertainment companies.</p>
           </div>
-          <div class="col-lg-2 mb-4 mb-lg-0">
-            <h5>Links</h5>
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <h5>MARVEL UNIVERSE</h5>
             <ul class="list-unstyled">
-              <li><a href="#" class="text-white">Home</a></li>
-              <li><a href="#" class="text-white">Features</a></li>
-              <li><a href="#" class="text-white">Pricing</a></li>
-              <li><a href="#" class="text-white">Contact</a></li>
+              <li><a href="#" class="text-white">Characters</a></li>
+              <li><a href="#" class="text-white">Comics</a></li>
+              <li><a href="#" class="text-white">Movies</a></li>
+              <li><a href="#" class="text-white">TV Shows</a></li>
+              <li><a href="#" class="text-white">Games</a></li>
             </ul>
           </div>
-          <div class="col-lg-2 mb-4 mb-lg-0">
-            <h5>Resources</h5>
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <h5>HELP & INFO</h5>
             <ul class="list-unstyled">
-              <li><a href="#" class="text-white">Blog</a></li>
-              <li><a href="#" class="text-white">Documentation</a></li>
-              <li><a href="#" class="text-white">Support</a></li>
+              <li><a href="#" class="text-white">Help Center</a></li>
+              <li><a href="#" class="text-white">Contact Us</a></li>
+              <li><a href="#" class="text-white">Careers</a></li>
+              <li><a href="#" class="text-white">Corporate Info</a></li>
             </ul>
           </div>
-          <div class="col-lg-4">
-            <h5>Stay Connected</h5>
-            <p>Subscribe to our newsletter for updates</p>
-            <div class="input-group mb-3">
-              <input type="email" class="form-control" placeholder="Email address" aria-label="Email address">
-              <button class="btn btn-light" type="button">Subscribe</button>
+          <div class="col-lg-3">
+            <h5>FOLLOW MARVEL</h5>
+            <div class="social-icons">
+              <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="text-white me-3"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="text-white me-3"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="text-white"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="mt-3">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your email address">
+                <button class="btn btn-danger" type="button">SUBSCRIBE</button>
+              </div>
             </div>
           </div>
         </div>
-        <hr class="my-4">
+        <hr class="my-4 bg-secondary">
         <div class="row">
           <div class="col-md-6 text-center text-md-start">
-            <p class="mb-0">&copy; 2023 Your Company. All rights reserved.</p>
+            <p class="mb-0">&copy; 2023 MARVEL. All Rights Reserved.</p>
           </div>
           <div class="col-md-6 text-center text-md-end">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item"><a href="#" class="text-white">Terms</a></li>
-              <li class="list-inline-item"><a href="#" class="text-white">Privacy</a></li>
+              <li class="list-inline-item"><a href="#" class="text-white">Terms of Use</a></li>
+              <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="#" class="text-white">Your California Privacy Rights</a></li>
             </ul>
           </div>
         </div>
