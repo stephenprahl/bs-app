@@ -2,11 +2,15 @@
 
 A responsive, modern web application dedicated to the Marvel Universe, showcasing heroes, latest movie releases, comic collections, and more.
 
-![Marvel Universe Fan Page](https://via.placeholder.com/800x400?text=Marvel+Universe+Fan+Page)
+## 📸 Screenshots
+
+![Marvel Universe Hero Section](screenshots/hero-section.png)
+*The hero section welcomes users with an eye-catching Marvel-themed banner*
 
 ## 📋 Table of Contents
 
 - [Overview](#overview)
+- [Screenshots](#screenshots)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
