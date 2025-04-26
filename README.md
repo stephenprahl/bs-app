@@ -10,6 +10,7 @@ A responsive, modern web application dedicated to the Marvel Universe, showcasin
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
+  - [Running with Docker](#running-with-docker)
 - [Project Structure](#project-structure)
 - [Customization](#customization)
 - [Browser Support](#browser-support)
@@ -36,6 +37,8 @@ The Marvel Universe Fan Page is a Bootstrap-powered website designed for Marvel 
 - **CSS3** - Custom styling with modern CSS features
 - **Bootstrap 5** - Frontend framework for responsive design
 - **Font Awesome 6** - Icon set for enhanced visual elements
+- **Docker** - Containerization of the application
+- **Nginx** - Web server for hosting the static files
 
 ## 🚀 Getting Started
 
@@ -67,6 +70,40 @@ The Marvel Universe Fan Page is a Bootstrap-powered website designed for Marvel 
    # Or simply double-click the file in your file explorer
    ```
 
+### Running with Docker
+
+The application is containerized and can be easily run using Docker Compose.
+
+#### Prerequisites
+
+- Docker and Docker Compose installed on your machine
+
+#### Steps to run with Docker
+
+1. Navigate to the project directory
+
+   ```bash
+   cd marvel-universe-fan-page
+   ```
+
+2. Build and start the Docker container using Docker Compose
+
+   ```bash
+   docker-compose up -d
+   ```
+
+3. Access the website in your browser at:
+
+   ```
+   http://localhost:8080
+   ```
+
+4. To stop the container
+
+   ```bash
+   docker-compose down
+   ```
+
 ## 📂 Project Structure
 
 ```
@@ -74,6 +111,8 @@ marvel-universe-fan-page/
 │
 ├── index.html           # Main HTML file with page structure
 ├── styles.css           # Custom CSS styles
+├── Dockerfile           # Docker configuration for the web server
+├── docker-compose.yml   # Docker Compose configuration
 └── README.md            # This documentation file
 ```
 
